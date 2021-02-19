@@ -49,7 +49,7 @@ app.get('/help', (req, res) => {
 
 
 app.get('/weather', (req, res) => {
-    if(req.query.city){
+    if(!req.query.city){
         res.send({
             error: "localizaçao difinida"
         });
