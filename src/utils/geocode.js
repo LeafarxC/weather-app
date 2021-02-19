@@ -20,4 +20,4 @@ const geocode = (adress, callback) => {
     
 }
 
-MSFIDOCredentialAssertion.exports = geocode
+module.exports = geocode
