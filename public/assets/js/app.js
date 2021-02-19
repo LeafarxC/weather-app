@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) =>{
 
     errorMessage.textContent = "A carregar...";
 
-    fetch('http://localhost:3000/weather?city=' + city ).then((response) => {
+    fetch('/weather?city=' + city ).then((response) => {
         response.json().then((data) => {
             if(data.error){
                 errorMessage.textContent = data.error;
